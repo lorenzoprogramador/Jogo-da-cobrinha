@@ -1,19 +1,182 @@
-#gameContainer{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('./wallpaper.png') center fixed;
+    font-size: 20px;
+
+
+}
+
+.topo {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container-topo {
+    background-color: #116177;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 150px;
+}
+
+.container-topo>div {
+    padding: 10px;
+}
+
+.container-topo > div p {
+    font-size: 20px;
     text-align: center;
 }
-#gameBoard{
-    border: 3px solid;
+
+.container-topo > div input {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    padding-left: 10px;
 }
-#scoreText{
-    font-family: "Permanent Marker", cursive;
-    font-size: 100px;
+
+.container-conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
-#resetBtn{
-    font-family: "Permanent Marker", cursive;
-    font-size: 22px;
-    width: 100px;
-    height: 50px;
-    border: 4px solid;
-    border-radius: 15px;
-    cursor: pointer;
+
+.sessao-conteudo-principal {
+    width: 900px;
+    height: 600px;
+    background-color: #116177;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    padding: 50px 0px;
+}
+
+.container-modificadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.container-modificadores > div p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-modificadores > div input {
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.container-vdv-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-vdv {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-left: 50px;
+}
+
+.container-vdv > div input {
+    border-radius: 5px;
+    height: 30px;
+    width: 95%;
+    padding: 5px;
+}
+
+.container-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img img {
+    width: 80%;
+    height: 80%;
+    padding-left: 50px;
+}
+
+.container-biografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-biografia textarea {
+    border-radius: 10px;
+    resize: none;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.sessao-conteudo-secundario {
+    width: 900px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: #116177;
+    margin-top: 50px;
+}
+
+.sessao-conteudo-secundario>div>h2 {
+    padding: 15px;
+}
+
+.sessao-conteudo-secundario>div>textarea{
+    width: 80%;
+    border-radius: 10px;
+    resize: none;
+    
+}
+
+.container-equipamento {
+    width: 100%;
+    text-align: center;
+}
+
+.container-caracteristicas {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-rodape {
+    width: 900px;
+    background-color: #116177;
+    text-align: center;
+}
+
+.container-rodape a {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+    padding: 10px;
 }

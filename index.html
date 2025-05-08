@@ -1,18 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Cobrinha 🐍</title>
+    <title>Ficha de Personagem</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="gameContainer">
-        <canvas id="gameBoard" width="500" height="500"></canvas>
-        <div id="scoreText">0</div>
-        <button id="resetBtn">Reset</button>
-    </div>
-    <script src="index.js"></script>
+    <header class="topo">
+        <section class="container-topo">
+            <div class="container-nome-personagem">
+                <p>Nome do personagem</p>
+                <input type="text">
+            </div>
+            <div class="container-nome-jogador">
+                <p>Nome jogador</p>
+                <input type="text">
+            </div>
+            <div class="container-pontos-xp">
+                <p>Pontos de experiência</p>
+                <input type="text">
+            </div>
+            <div class="container-raca">
+                <p>Raça</p>
+                <input type="text">
+            </div>
+            <div class="container-classe">
+                <p>Classe</p>
+                <input id="classe" type="text">
+            </div>
+            <div class="container-alinhamento">
+                <p>Alinhamento</p>
+                <input type="text">
+            </div>
+        </section>
+    </header>
+    <main class="container-conteudo-principal">
+        <section class="sessao-conteudo-principal">
+            <div class="container-modificadores">
+                <div class="forca">
+                    <p>FOR</p>
+                    <input type="text">
+                </div>
+                <div class="destreza">
+                    <p>DES</p>
+                    <input type="text">
+                </div>
+                <div class="constituicao">
+                    <p>CON</p>
+                    <input type="text">
+                </div>
+                <div class="inteligencia">
+                    <p>INT</p>
+                    <input type="text">
+                </div>
+                <div class="sabedoria">
+                    <p>SAB</p>
+                    <input type="text">
+                </div>
+                <div class="carisma">
+                    <p>CAR</p>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="container-vdv-img">
+                <div class="container-vdv">
+                    <div>
+                        <p>Vida</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Defesa</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Velocidade</p>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img id="imagem" src="personagens/necromante.png" width="300" alt=""></div>
+                </div>
+                <div class="container-biografia">
+                    <h2>Biografia</h2>
+                    <textarea name="" id="" cols="30" rows="25"></textarea>
+                </div>
+        </section>
+        <section class="sessao-conteudo-secundario">
+            <div class="container-equipamento">
+                <h2>Equipamentos</h2>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="container-caracteristicas">
+                <h2>Características</h2>
+                <textarea name="" id=""></textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-rodape"><a href="">Lorenzo</a></div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
